@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  v.infra:
+    image: v.infra
+    build:
+      context: ./V.Infra
+      dockerfile: Dockerfile
+
+  v.infra.api:
+    image: v.infra.api
+    build:
+      context: ./V.Infra.Api
+      dockerfile: Dockerfile
